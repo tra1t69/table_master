@@ -1,13 +1,16 @@
 import React, { FC, ChangeEvent, FormEvent, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Col, Button, Row, Form, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './main.css';
-const MainPage:FC =()=>{
-  
+import './header.css';
+const Header:FC =()=>{
+  const onSubmit  = (e: FormEvent) => {
+    e.preventDefault();
+  }
+
   return(
     <Container> 
-    <Navbar variant="pills" bg='dark' className='nav' >
-      <NavDropdown title="Меню" id="nav-dropdown" className='list_title'>
+    <Navbar bg='dark' className='nav' onSubmit={onSubmit}>
+      <NavDropdown title="Меню" id="nav-dropdown">
         <NavDropdown.Item eventKey="1">Редактировать таблицу</NavDropdown.Item>
         <NavDropdown.Item eventKey="2">Загрузить таблицу</NavDropdown.Item>
         <NavDropdown.Divider />
@@ -19,12 +22,12 @@ const MainPage:FC =()=>{
             placeholder="Search"
             className="mr-sm-2"
           />
-          <Button className='' type="submit">Поиск</Button>
+          <Button className='ms-2' type="submit">Поиск</Button>
       </Form>
-      <Button type="submit" className="ms-lg-auto">Выход</Button>
+      <Button type="submit" className="ms-lg-auto me-lg-2">Выход</Button>
     </Navbar>
     </Container>
   )
 }
 
-export default MainPage;
+export default Header;

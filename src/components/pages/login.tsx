@@ -36,7 +36,7 @@ const LoginPage: FC = () => {
         <Form.Group className="mb-3">
           <Form.Label>Логин</Form.Label>
           <Form.Control
-          onChange={OnLogin}
+            onChange={OnLogin}
             type="text"
             placeholder="Введите логин"
             name="login"
@@ -46,7 +46,7 @@ const LoginPage: FC = () => {
         <Form.Group className="mb-3">
           <Form.Label>Пароль</Form.Label>
           <Form.Control
-          onChange={onPassword}
+            onChange={onPassword}
             type="text"
             placeholder="Введите пароль"
             name="password"
