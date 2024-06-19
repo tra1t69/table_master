@@ -42,11 +42,9 @@ const CreateUserPage:FC = () =>{
       onChange={onPassword}
       />
     </Form.Group>
-    <Button className="form-button" type="submit">Создать</Button>
+    <Button type="submit">Создать</Button>
     </Form>
     </Container>
-
-
     </div>
   )
 }
