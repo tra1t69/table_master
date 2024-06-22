@@ -45,7 +45,7 @@ const CreateTablePage:FC = () =>{
     <Container className="mt-5" >
     <Form  onSubmit={onSubmit} className="form d-flex flex-column justify-content-center">
     <Form.Group className="mb-2">
-      <Form.Label>Название таблицы</Form.Label>
+      <Form.Label>Задайте название таблицы</Form.Label>
       <Form.Control
       type="text"
       name="table-name"
@@ -54,7 +54,7 @@ const CreateTablePage:FC = () =>{
       />
     </Form.Group>
     <Form.Group className="mb-2">
-      <Form.Label>Количество колонок</Form.Label>
+      <Form.Label>Укажите количество колонок</Form.Label>
       <Form.Control
       type="text"
       name="column"
@@ -63,7 +63,7 @@ const CreateTablePage:FC = () =>{
       />
     </Form.Group>
     <Form.Group className="mb-2">
-      <Form.Label>Количество строк</Form.Label>
+      <Form.Label>Укажите количество строк</Form.Label>
       <Form.Control
       type="text"
       name="row"

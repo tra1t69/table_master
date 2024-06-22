@@ -1,6 +1,10 @@
-.nav{
-  border-radius: 5px;
-}
-.list_title{
+#nav-dropdown{
   color: white;
+  background-color: rgb(13, 110, 253);
+  border-radius: 5px;
+  padding: 7px 8px;
+}
+.navbar{
+  background-color: rgb(138, 138, 138);
+  
 }

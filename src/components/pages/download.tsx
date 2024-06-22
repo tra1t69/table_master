@@ -2,6 +2,7 @@ import React, { FC, FormEvent, useState, ChangeEvent } from "react";
 import Header from "./header";
 import { Container, InputGroup, Form, Button } from "react-bootstrap";
 import './download.css'
+import { cp } from "fs";
 const DownloadPage:FC = () =>{ 
 
   return(
@@ -16,27 +17,24 @@ const DownloadPage:FC = () =>{
     <Form className="list-tables">
       <div className="item d-flex flex-row align-items-center justify-content-between">
       <div className="">Таблица поступающих 2024г</div>
-      <Form.Check
-            inline
+      <Form.Check  
             name="group1"
           />
       </div>
       <div className="item d-flex flex-row align-items-center justify-content-between">
       <div className="">Таблица ведомостей</div>
       <Form.Check
-            inline
-            name="group1"
+            name="group2"
           />
       </div>
       <div className="item d-flex flex-row align-items-center justify-content-between">
       <div className="">Таблица результатов</div>
       <Form.Check
-            inline
-            name="group1"
+            name="group3"
           />
       </div>
     </Form>
-    <Button className="ml-auto">Загрузить</Button>
+    <Button className="ml-auto button">Загрузить</Button>
     </Container>
     </div>
   )

@@ -25,7 +25,7 @@ const CreateUserPage:FC = () =>{
     <Container className="mt-5">
     <Form onSubmit={onSubmit}  className="form d-flex flex-column justify-content-center">
     <Form.Group className="mb-2">
-      <Form.Label>Логин</Form.Label>
+      <Form.Label>Введите логин будущего пользователя</Form.Label>
       <Form.Control
       type="text"
       name="table-name"
@@ -34,7 +34,7 @@ const CreateUserPage:FC = () =>{
       />
     </Form.Group>
     <Form.Group className="mb-2">
-      <Form.Label>Пароль</Form.Label>
+      <Form.Label>Введите пароль будущего пользователя</Form.Label>
       <Form.Control
       type="text"
       name="column"

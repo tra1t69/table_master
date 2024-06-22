@@ -8,25 +8,28 @@ const Header:FC =()=>{
   }
 
   return(
-    <Container> 
-    <Navbar bg='dark' className='nav' onSubmit={onSubmit}>
-      <NavDropdown title="Меню" id="nav-dropdown">
+    
+    <Navbar onSubmit={onSubmit} className='navbar' >
+      <Container> 
+      <NavDropdown title={<span className='navDropdown'>Меню</span>} id="nav-dropdown" >
         <NavDropdown.Item eventKey="1">Редактировать таблицу</NavDropdown.Item>
         <NavDropdown.Item eventKey="2">Загрузить таблицу</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item eventKey="3">Помощь</NavDropdown.Item>
+        <NavDropdown.Item eventKey="3">Настройки</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4">Помощь</NavDropdown.Item>
       </NavDropdown>
       <Form className='d-flex flex-row col-7 offset-2'>
           <Form.Control
             type="text"
-            placeholder="Search"
+            placeholder="Введите требуемый запрос"
             className="mr-sm-2"
           />
           <Button className='ms-2' type="submit">Поиск</Button>
       </Form>
       <Button type="submit" className="ms-lg-auto me-lg-2">Выход</Button>
+      </Container>
     </Navbar>
-    </Container>
+    
   )
 }
 
