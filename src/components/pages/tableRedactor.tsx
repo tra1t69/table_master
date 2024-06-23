@@ -14,6 +14,11 @@ const AddLocalTitle = () =>{
     <Container className="mt-xl-5">
     <div className="d-flex flex-column redactor-buttons">
     <div className="d-flex justify-content-center">
+    <Button  className="choose-button" >
+    Выбрать таблицу
+    </Button>
+      </div>
+    <div className="d-flex justify-content-center">
     <Button  className="redactor-button" >
     Добавить строку
     </Button>

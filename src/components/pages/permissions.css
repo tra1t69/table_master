@@ -1,0 +1,30 @@
+
+.form{
+  overflow: auto;
+  padding: 10px 15px;
+  width: 40%;
+  background-color: #BCBCBC;
+  border-radius: 5px;
+  height: 500px;
+}
+.arrow-button{
+  height: 10%;
+  margin: 0 10px 5px;
+}
+.item{
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  border-width: 3px;
+  margin-bottom: 8px;
+  padding: 10px 10px;
+  width: 100%;
+  color: white;
+}
+.form-check-input:checked {
+  border-color: rgb(51, 51, 51);
+}
+.choose-button{
+  max-width: 90%;
+  width: 100%;
+  margin-bottom: 10px;
+}

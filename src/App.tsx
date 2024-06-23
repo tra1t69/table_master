@@ -5,14 +5,12 @@ import CreateTablePage from './components/pages/createTable';
 import CreateUserPage from './components/pages/createUser';
 import TableRedactorPage from './components/pages/tableRedactor';
 import DownloadPage from './components/pages/download';
+import PermissionsPage from './components/pages/permissions';
 const App:FC = () =>{
   return (
     
     <div>
-      <TableRedactorPage />
-      <CreateUserPage/>
-      <CreateTablePage/>
-      <DownloadPage />
+      <PermissionsPage />
     </div>
   );
 }
