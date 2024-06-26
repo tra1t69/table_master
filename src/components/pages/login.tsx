@@ -1,6 +1,7 @@
 import React, { FC, ChangeEvent, FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
+import Header from './header';
 import './login.css';
 const LoginPage: FC = () => {
   const[login, setLogin] = useState('');
@@ -31,7 +32,9 @@ const LoginPage: FC = () => {
 
 
   return(
-    <div className="container">
+    <div>
+      <Header />
+    <div className="container mt-xl-5">
       <Form className="login-form" onSubmit={onSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Логин</Form.Label>
@@ -57,6 +60,7 @@ const LoginPage: FC = () => {
           Войти
         </Button>
       </Form>
+    </div>
     </div>
   )
 }

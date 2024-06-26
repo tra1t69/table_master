@@ -21,14 +21,14 @@ const PermissionsPage:FC = () =>{
       <div className="form">
 
       <div className="item d-flex justify-content-between">
-        <div>123</div>
+        <div>Таблица поступающих</div>
         <Form.Check  
         name="group1"
         />
       </div>
 
       <div className="item d-flex justify-content-between">
-        <div>123</div>
+        <div>Таблица баллов ЕГЭ</div>
         <Form.Check  
         name="group1"
         />
@@ -47,21 +47,21 @@ const PermissionsPage:FC = () =>{
 
 
       <div className="item d-flex justify-content-between">
-        <div>123</div>
+        <div>Таблица преподавателей</div>
         <Form.Check  
         name="group1"
         />
       </div>
 
       <div className="item d-flex justify-content-between">
-        <div>123</div>
+        <div>Таблица результатов за 2023г.</div>
         <Form.Check  
         name="group1"
         />
       </div>
 
       <div className="item d-flex justify-content-between">
-        <div>123</div>
+        <div>Таблица поступивших за 2023г. </div>
         <Form.Check  
         name="group1"
         />
